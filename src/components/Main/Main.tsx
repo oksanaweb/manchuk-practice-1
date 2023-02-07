@@ -4,13 +4,13 @@ import { User, UserAddress } from "../../types/types.ts/types";
 import { UserGeo } from "../../types/types.ts/types";
 
 interface GeoProps {
-  userInfoGeo: UserAddress;
+  userInfoGeo: UserGeo;
 }
 
-export const Main = ({ userInfoGeo: { geo } }: GeoProps) => {
+export const Main = ({ userInfoGeo }: GeoProps) => {
   return (
     <div>
-      <UserMap userInfoGeo={geo} />
+      <UserMap userInfoGeo={userInfoGeo} />
     </div>
   );
 };

@@ -35,8 +35,8 @@ export const App = () => {
   };
   return (
     <div>
-      <Header name={user.name} userName={user.username} email={user.email} />
-      <Main userInfoGeo={user.address} />
+      <Header userInfo={user} />
+      <Main userInfoGeo={user.address.geo} />
       <Aside userAdress={user.address} />
       <Footer userCompanyInfo={user.company} />
     </div>
